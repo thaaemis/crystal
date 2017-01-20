@@ -21,19 +21,3 @@ def seg_intersect(a1,a2, b1,b2) :
     denom = dot( dap, db)
     num = dot( dap, dp )
     return (num / denom.astype(float))*db + b1
-
-p1 = array( [0.0, 0.0] )
-p2 = array( [1.0, 0.0] )
-
-p3 = array( [4.0, -5.0] )
-p4 = array( [4.0, 2.0] )
-
-print seg_intersect( p1,p2, p3,p4)
-
-p1 = array( [2.0, 2.0] )
-p2 = array( [4.0, 3.0] )
-
-p3 = array( [6.0, 0.0] )
-p4 = array( [6.0, 3.0] )
-
-print seg_intersect( p1,p2, p3,p4)
